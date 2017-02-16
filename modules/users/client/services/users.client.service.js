@@ -6,6 +6,16 @@ angular.module('users').factory('Users', ['$resource',
     return $resource('api/users', {}, {
       update: {
         method: 'PUT'
+      },
+      countUsers: {
+        method: 'GET',
+        url: '/users/userCount',
+        isArray: false
+      },
+      countUsersToday: {
+        method: 'GET',
+        url: '/users/userCountToday',
+        isArray: false
       }
     });
   }

@@ -45,6 +45,7 @@ module.exports = function (app) {
       'r_emailaddress'
     ]
   }));
+
   app.route('/api/auth/linkedin/callback').get(users.oauthCallback('linkedin'));
 
   // Setting the github oauth routes

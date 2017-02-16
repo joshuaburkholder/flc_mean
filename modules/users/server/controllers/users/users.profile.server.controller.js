@@ -8,8 +8,6 @@ var _ = require('lodash'),
   path = require('path'),
   errorHandler = require(path.resolve('./modules/core/server/controllers/errors.server.controller')),
   mongoose = require('mongoose'),
-  multer = require('multer'),
-  config = require(path.resolve('./config/config')),
   User = mongoose.model('User');
 
 /**
@@ -56,20 +54,16 @@ exports.update = function (req, res) {
 exports.changeProfilePicture = function (req, res) {
   var user = req.user;
   var message = null;
-  var upload = multer(config.uploads.profileUpload).single('newProfilePicture');
-  var profileUploadFileFilter = require(path.resolve('./config/lib/multer')).profileUploadFileFilter;
-  
-  // Filtering to upload only images
-  upload.fileFilter = profileUploadFileFilter;
 
   if (user) {
-    upload(req, res, function (uploadError) {
-      if(uploadError) {
+    fs.writeFile('./modules/users/client/img/profile/uploads/' + req.files.file.name, req.files.file.buffer, function (uploadError) {
+      if (uploadError) {
         return res.status(400).send({
           message: 'Error occurred while uploading profile picture'
         });
       } else {
-        user.profileImageURL = config.uploads.profileUpload.dest + req.file.filename;
+
+        user.profileImageURL = 'modules/users/client/img/profile/uploads/' + req.files.file.name;
 
         user.save(function (saveError) {
           if (saveError) {
@@ -94,6 +88,51 @@ exports.changeProfilePicture = function (req, res) {
     });
   }
 };
+
+/**
+ * Count of Users
+ */
+exports.countUsers = function (req, res) {
+  User.count({},
+
+      function (err, usersCount) {
+        if (err) {
+          return res.status(400).send({
+            message: errorHandler.getErrorMessage(err)
+          });
+        } else {
+          var data = {};
+          data.count =  usersCount;
+          res.jsonp(data);
+        }
+      });
+};
+
+/**
+ * Count of Users Today
+ */
+exports.countUsersToday = function (req, res) {
+  User.count({
+
+        $where: function ()
+        { return Date.now() - this._id.getTimestamp() < (24 * 60 * 60 * 1000);  }
+
+      },
+
+      function (err, usersCount) {
+        if (err) {
+          return res.status(400).send({
+            message: errorHandler.getErrorMessage(err)
+          });
+        } else {
+          var data = {};
+          data.count =  usersCount;
+          res.jsonp(data);
+        }
+      });
+};
+
+
 
 /**
  * Send User

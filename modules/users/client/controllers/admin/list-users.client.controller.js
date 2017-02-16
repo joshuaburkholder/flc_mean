@@ -1,11 +1,23 @@
 'use strict';
 
-angular.module('users.admin').controller('UserListController', ['$scope', '$filter', 'Admin',
+angular.module('users').controller('UserListController', ['$scope', '$filter', 'Admin',
   function ($scope, $filter, Admin) {
     Admin.query(function (data) {
       $scope.users = data;
       $scope.buildPager();
     });
+
+    $scope.searchTab = false;
+
+    $scope.toggleSearch = function(){
+
+      if($scope.searchTab === true){
+        $scope.searchTab = false;
+      }else if($scope.searchTab === false){
+        $scope.searchTab = true;
+      }
+
+    };
 
     $scope.buildPager = function () {
       $scope.pagedItems = [];
