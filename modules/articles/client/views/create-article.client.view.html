@@ -1,6 +1,7 @@
 <section ng-controller="ArticlesController">
   <div class="page-header">
-    <h1>New Article</h1>
+    <h2>New Announcement</h2>
+    <p>Post your announcement below</p>
   </div>
   <div class="col-md-12">
     <form name="articleForm" class="form-horizontal" ng-submit="create(articleForm.$valid)" novalidate>
@@ -16,12 +17,58 @@
           <label for="content">Content</label>
           <textarea name="content" ng-model="content" id="content" class="form-control" cols="30" rows="10" placeholder="Content"></textarea>
         </div>
+
+<!--Here is the toggle for announcement type radio selection    -->
+
+      <h2>What type of announcement is this?</h2>
+        <ul class='tg-list'>
+
+          <li class='tg-list-item'>
+            <label class='tgl-btn' for='rd1'>
+              <h4>Prayer Request/Celebration</h4>
+            </label>
+              <input class='tgl tgl-light' id='rd1' name='group' type='radio' ng-model="typea" value="Prayer Concern/Celebration">
+            <label class='tgl-btn' for='rd1'></label>
+            <label class='tgl-btn' for='rd1'></label>
+          </li>
+
+          <li class='tg-list-item'>
+            <label class='tgl-btn' for='rd2'>
+              <h4>Opportunity to Serve</h4>
+            </label>
+            <input class='tgl tgl-light' id='rd2' name='group' type='radio' ng-model="typea" value="Service Opportunity">
+            <label class='tgl-btn' for='rd2'></label>
+            <label class='tgl-btn' for='rd2'></label>
+          </li>
+
+          <li class='tg-list-item'>
+            <label class='tgl-btn' for='rd3'>
+              <h4>Event</h4>
+            </label>
+         
+            <input class='tgl tgl-light' id='rd3' name='group' type='radio' ng-model="typea" value="Event or Gathering">
+            <label class='tgl-btn' for='rd3'></label>
+            <label class='tgl-btn' for='rd3'></label>
+          </li>
+
+          <li class='tg-list-item'>
+             <label class='tgl-btn' for='rd4'>
+              <h4>Other</h4>
+            </label>
+            <input class='tgl tgl-light' id='rd4' name='group' type='radio' ng-model="typea" value="Notice">
+            <label class='tgl-btn' for='rd4'></label>
+            <label class='tgl-btn' for='rd4'></label>
+          </li>
+<br/>
+<hr>
+<!--Submit button and error -->
         <div class="form-group">
-          <input type="submit" class="btn btn-default">
+          <span><input type="submit" class="btn btn-success btn-lg"></span>
         </div>
         <div ng-show="error" class="text-danger">
           <strong ng-bind="error"></strong>
         </div>
+
       </fieldset>
     </form>
   </div>

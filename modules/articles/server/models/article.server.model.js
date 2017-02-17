@@ -25,6 +25,11 @@ var ArticleSchema = new Schema({
     default: '',
     trim: true
   },
+  typea: {
+    type: String,
+    default: 'Announcement',
+    trim: true
+  },
   user: {
     type: Schema.ObjectId,
     ref: 'User'

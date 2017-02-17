@@ -18,7 +18,9 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
       // Create new Article object
       var article = new Articles({
         title: this.title,
-        content: this.content
+        content: this.content,
+        typea: this.typea
+
       });
 
       // Redirect after save
@@ -28,6 +30,7 @@ angular.module('articles').controller('ArticlesController', ['$scope', '$statePa
         // Clear form fields
         $scope.title = '';
         $scope.content = '';
+        $scope.typea = '';
       }, function (errorResponse) {
         $scope.error = errorResponse.data.message;
       });
