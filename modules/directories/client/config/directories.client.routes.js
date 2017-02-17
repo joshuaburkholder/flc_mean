@@ -32,7 +32,7 @@
           directoryResolve: newDirectory
         },
         data: {
-          roles: ['user', 'admin'],
+          roles: ['admin'],
           pageTitle: 'Directories Create'
         }
       })

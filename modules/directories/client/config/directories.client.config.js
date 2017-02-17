@@ -13,7 +13,7 @@
       title: 'Directories',
       state: 'directories',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['user']
     });
 
     // Add the dropdown list item
@@ -26,7 +26,7 @@
     Menus.addSubMenuItem('topbar', 'directories', {
       title: 'Create Directory',
       state: 'directories.create',
-      roles: ['user']
+      roles: ['admin']
     });
   }
 }());

@@ -24,6 +24,65 @@ li {
   padding: 0;
 }
 
+/*********************TEST for EVENT CARDS (LISTS)*******************************/
+
+
+/*#eventcard {
+  max-width: 150px;
+  background-color: green;
+}*/
+
+#eventcard {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 4px 10px 18px 0 rgba(0,0,0,0.2) !important; 
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:20em;
+    height:20em;
+    margin-top: -10em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em;
+    padding: 2px 16px !important;
+    background-color: rgba(44, 230, 44, 0.1);
+}
+
+/* On mouse-over, add a deeper shadow */
+#eventcard:hover {
+    box-shadow: 4 18px 26px 0 rgba(25,50,25,.8) !important;
+  transform: scale(1.1, 1.1) !important;
+}
+
+/* Scale up the box */
+#eventcard: hover {
+
+}
+
+/* Fade in the pseudo-element with the bigger shadow */
+#eventcard: hover::after {
+  opacity: 1 !important;
+}
+
+/************************STICKY NOTE CSS*******************************/
+.note {
+    width: 160px;
+    height: 160px;
+    box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -webkit-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    -moz-box-shadow: 0 3px 6px rgba(0,0,0,.25);
+    float: left;
+    margin: 8px;
+    border: 1px solid rgba(0,0,0,.25);
+}
+ 
+.sticky1 {
+    transform: rotate(-3.5deg);
+    -webkit-transform: rotate(-3.5deg);
+    -moz-transform: rotate(-3.5deg);
+    background-color: #CBFAFA;
+}
+
+/************************STICKY NOTE CSS*******************************/
+
 /****************Styling for Articles - Create ************************************/
 .tg-list {
   text-align: center;

@@ -25,5 +25,18 @@
 END TABLE
 
 
+  <small>
+    <em class="text-muted">
+      Posted on
+      <span ng-bind="vm.directory.created | date:'mediumDate'"></span>
+      by
+      <span ng-if="vm.directory.user"
+            ng-bind="vm.directory.user.displayName"></span>
+      <span ng-if="!vm.directory.user">Deleted User</span>
+    </em>
+  </small>
+  <p class="lead" ng-bind="vm.directory.content"></p>
+  {{vm.userList}}
+
 
 </section>

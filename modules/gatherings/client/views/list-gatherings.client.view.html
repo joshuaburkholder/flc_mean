@@ -3,7 +3,7 @@
     <h1>Gatherings</h1>
   </div>
   <div class="list-group">
-    <a ng-repeat="gathering in vm.gatherings"
+      <a ng-repeat="gathering in vm.gatherings"
        ui-sref="gatherings.view({ gatheringId: gathering._id })"
        class="list-group-item">
       <small class="list-group-item-text">
@@ -15,8 +15,11 @@
       </small>
       <h4 class="list-group-item-heading" ng-bind="gathering.name"></h4>
     </a>
+    </div>
   </div>
+
   <div class="alert alert-warning text-center" ng-if="vm.gatherings.$resolved && !vm.gatherings.length">
     No Gatherings yet, why don't you <a ui-sref="gatherings.create">create one</a>?
   </div>
+
 </section>
