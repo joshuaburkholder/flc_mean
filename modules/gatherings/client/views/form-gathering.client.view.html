@@ -1,0 +1,59 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.gathering._id ? 'Edit Gathering' : 'New Event'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.gatheringForm" class="form-horizontal" ng-submit="vm.save(vm.form.gatheringForm.$valid)" novalidate>
+      <fieldset>
+
+<!--Form fields -->
+  <!--name -->
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Name of Gathering</label>
+          <input name="name" type="text" ng-model="vm.gathering.name" id="name" class="form-control" placeholder="Name" required>
+          <div ng-messages="vm.form.gatheringForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Gathering name is required.</p>
+          </div>
+    <!--description -->
+          <label class="control-label" for="description">Description</label>
+          <input name="description" type="text" ng-model="vm.gathering.description" id="description" class="form-control" placeholder="Describe your gathering" required>
+          <div ng-messages="vm.form.gatheringForm.description.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Gathering description is required.</p>
+          </div>
+
+<!--date as a text input -->
+          <label class="control-label" for="dateString">DateString</label>
+          <input name="dateString" type="text" ng-model="vm.gathering.dateString" id="dateString" class="form-control" placeholder="Describe your gathering" required>
+          <div ng-messages="vm.form.gatheringForm.dateString.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Gathering dateString is required.</p>
+          </div>
+
+<!--location -->
+          <label class="control-label" for="location">Location</label>
+          <input name="location" type="text" ng-model="vm.gathering.location" id="location" class="form-control" placeholder="Describe your gathering" required>
+          <div ng-messages="vm.form.gatheringForm.location.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Gathering location is required.</p>
+          </div>
+
+<!--contact -->
+          <label class="control-label" for="contact">Your contact info:</label>
+          <input name="contact" type="text" ng-model="vm.gathering.contact" id="contact" class="form-control" placeholder="Describe your gathering" required>
+          <div ng-messages="vm.form.gatheringForm.contact.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Gathering contact is required.</p>
+          </div>
+
+    <!--date -->      
+        <label class="control-label" for="date">Pick a date:</label>
+        <input name="date" type="date" ng-model="vm.gathering.date" id="Date" placeholder="yyyy-MM-dd" min="2017-02-16" max="2020-12-31">
+
+<!-- FORM SUBMIT -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.gathering._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>
