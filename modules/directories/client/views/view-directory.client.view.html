@@ -15,15 +15,19 @@
 
 
   <table id="searchObjResults">
-  <tr><th>Name</th><th>Phone</th></tr>
+  <tr><th class="titler">Name</th><th></th><th class="titler">Username</th></tr>
   <tr ng-repeat="user in vm.userList">
-    <td>{{user.displayName}}</td>
-    <td>{{user.username}}</td>
+    <td><img ng-src="{{user.profileImageURL}}" alt="{{user.imageURL}}" height="30" width="30"></td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td class = "titler2">
+    {{user.username}}</td>
+
   </tr>
 </table>
+<hr/>
+Feel like chatting? See who's online and <a href="/chat">start the conversation</a>.
 
-END TABLE
-
-
+<!-- {{vm.userList}} -->
 
 </section>

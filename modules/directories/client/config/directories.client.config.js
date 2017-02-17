@@ -26,7 +26,7 @@
     Menus.addSubMenuItem('topbar', 'directories', {
       title: 'Create Directory',
       state: 'directories.create',
-      roles: ['user']
+      roles: ['admin']
     });
   }
 }());
