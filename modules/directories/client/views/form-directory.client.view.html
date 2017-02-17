@@ -1,0 +1,24 @@
+<section>
+  <div class="page-header">
+    <h1>{{vm.directory._id ? 'Edit Directory' : 'New Directory'}}</h1>
+  </div>
+  <div class="col-md-12">
+    <form name="vm.form.directoryForm" class="form-horizontal" ng-submit="vm.save(vm.form.directoryForm.$valid)" novalidate>
+      <fieldset>
+        <div class="form-group" show-errors>
+          <label class="control-label" for="name">Name</label>
+          <input name="name" type="text" ng-model="vm.directory.name" id="name" class="form-control" placeholder="Name" required>
+          <div ng-messages="vm.form.directoryForm.name.$error" role="alert">
+            <p class="help-block error-text" ng-message="required">Directory name is required.</p>
+          </div>
+        </div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-default">{{vm.directory._id ? 'Update' : 'Create'}}</button>
+        </div>
+        <div ng-show="vm.error" class="text-danger">
+          <strong ng-bind="vm.error"></strong>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</section>

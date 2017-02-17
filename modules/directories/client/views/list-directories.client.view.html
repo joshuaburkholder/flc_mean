@@ -1,0 +1,22 @@
+<section>
+  <div class="page-header">
+    <h1>Directories</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="directory in vm.directories"
+       ui-sref="directories.view({ directoryId: directory._id })"
+       class="list-group-item">
+      <small class="list-group-item-text">
+        Posted on
+        <span ng-bind="directory.created | date:'mediumDate'"></span>
+        by
+        <span ng-if="directory.user" ng-bind="directory.user.displayName"></span>
+        <span ng-if="!directory.user">Deleted User</span>
+      </small>
+      <h4 class="list-group-item-heading" ng-bind="directory.name"></h4>
+    </a>
+  </div>
+  <div class="alert alert-warning text-center" ng-if="vm.directories.$resolved && !vm.directories.length">
+    No Directories yet, why don't you <a ui-sref="directories.create">create one</a>?
+  </div>
+</section>
