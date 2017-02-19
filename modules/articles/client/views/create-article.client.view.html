@@ -21,7 +21,8 @@
 <!--Here is the toggle for announcement type radio selection    -->
 
       <h2>What type of announcement is this?</h2>
-        <ul class='tg-list'>
+        <div id="toggles">
+           <ul class='tg-list'>
 
           <li class='tg-list-item'>
             <label class='tgl-btn' for='rd1'>
@@ -59,8 +60,10 @@
             <label class='tgl-btn' for='rd4'></label>
             <label class='tgl-btn' for='rd4'></label>
           </li>
-<br/>
-<hr>
+          </ul>
+          </div>
+<br>
+
 <!--Submit button and error -->
         <div class="form-group">
           <span><input type="submit" class="btn btn-success btn-lg"></span>
@@ -68,7 +71,7 @@
         <div ng-show="error" class="text-danger">
           <strong ng-bind="error"></strong>
         </div>
-
+<hr>
       </fieldset>
     </form>
   </div>

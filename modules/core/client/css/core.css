@@ -59,6 +59,12 @@ li {
 }
 
 /****************Styling for Articles - Create ************************************/
+#toggles {
+  background-color: #c2c4c2;
+  border-radius: 10px;
+  font-color: black;
+}
+
 .tg-list {
   text-align: center;
   display: -webkit-box;
