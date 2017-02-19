@@ -45,7 +45,7 @@
           directoryResolve: getDirectory
         },
         data: {
-          roles: ['user', 'admin'],
+          roles: ['admin'],
           pageTitle: 'Edit Directory {{ directoryResolve.name }}'
         }
       })

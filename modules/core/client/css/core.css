@@ -32,7 +32,7 @@ li {
 }
 
 .titler {
-  color:  blue;
+  color:  #4863A0;
   font-size: 20px;
 }
 
@@ -52,7 +52,7 @@ li {
 
 /****************Styling for Articles - Create ************************************/
 #toggles {
-  background-color: #c2c4c2;
+  background-color: #B7D7D7;
   border-radius: 10px;
   font-color: black;
 }
@@ -380,3 +380,9 @@ a:hover .header-profile-image {
   background-color: #90ADCD;
 }
 */
+
+#directorycontainer {
+  border: 2px solid #98AFC7;
+  padding: 10px 10px 10px 10px;
+  border-radius: 20px;
+}

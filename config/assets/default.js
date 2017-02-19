@@ -6,7 +6,8 @@ module.exports = {
       css: [
         'public/lib/cerulean/theme/bootstrap.css',
         'public/lib/cerulean/theme/usebootstrap.css',
-        'public/lib/cerulean/theme/bootstrap.min.css'
+        'public/lib/cerulean/theme/bootstrap.min.css',
+        'public/lib/bootstrap/dist/css/bootstrap.css'
       ],
       js: [
         'public/lib/cerulean/bootstrap/bootstrap.min.js',
@@ -24,8 +25,8 @@ module.exports = {
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js'
       ],
       less: [
-      'public/lib/cerulean/theme/usebootstrap.less',
-      'public/lib/cerulean/theme/variables.less'
+        'public/lib/cerulean/theme/usebootstrap.less',
+        'public/lib/cerulean/theme/variables.less'
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },

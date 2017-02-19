@@ -1,9 +1,11 @@
 <section>
+ 
   <div class="page-header">
     <h1 ng-bind="vm.directory.name"></h1>
   </div>
+ <div id="directorycontainer">
   <div class="pull-right"
-       ng-show="vm.directory.isCurrentUserOwner">
+       ng-show="vm.directory.isAdmin">
     <a class="btn btn-primary"
        ui-sref="directories.edit({ directoryId: vm.directory._id })">
       <i class="glyphicon glyphicon-edit"></i>
@@ -27,8 +29,8 @@
   </tr>
 </table>
 <hr/>
-Feel like chatting? See who's online and <a href="/chat">start the conversation</a>.
-
+<h3>Feel like chatting? See who's online and <a href="/chat">start the conversation</a>.</h3>
+</div>
 <!-- {{vm.userList}} -->
 
 </section>
