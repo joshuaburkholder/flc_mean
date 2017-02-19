@@ -1,4 +1,5 @@
 html,
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17,6 +18,24 @@ body {
   font-family: sans-serif;
 }
 
+.wrapper {
+  background-image: url("/modules/core/client/img/firstview.jpg");
+}
+
+.fancytext {
+  font-size: 50px;
+  text-align: center;
+  color: white;
+  text-shadow:  5px 5px #558ABB;
+}
+
+.fancysubtext {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  text-shadow:  2px 2px #558ABB;
+}
+
 ul,
 li {
   list-style: none;
@@ -33,6 +52,10 @@ li {
   color:  green;
   font-size: 16px;
   padding-bottom: 5px;
+}
+
+.well {
+  background-image: url("/modules/core/client/img/secondview.jpg");
 }
 
 /****************Styling for Articles - Create ************************************/

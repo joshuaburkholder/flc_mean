@@ -13,7 +13,7 @@
       title: 'Directories',
       state: 'directories',
       type: 'dropdown',
-      roles: ['*']
+      roles: ['user', 'admin']
     });
 
     // Add the dropdown list item
