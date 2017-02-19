@@ -21,13 +21,6 @@
             <p class="help-block error-text" ng-message="required">Gathering description is required.</p>
           </div>
 
-<!--date as a text input -->
-          <label class="control-label" for="dateString">DateString</label>
-          <input name="dateString" type="text" ng-model="vm.gathering.dateString" id="dateString" class="form-control" placeholder="Describe your gathering" required>
-          <div ng-messages="vm.form.gatheringForm.dateString.$error" role="alert">
-            <p class="help-block error-text" ng-message="required">Gathering dateString is required.</p>
-          </div>
-
 <!--location -->
           <label class="control-label" for="location">Location</label>
           <input name="location" type="text" ng-model="vm.gathering.location" id="location" class="form-control" placeholder="Describe your gathering" required>

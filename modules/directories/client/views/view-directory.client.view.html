@@ -17,19 +17,20 @@
 
 
   <table id="searchObjResults">
-  <tr><th class="titler">Username</th><th></th><th class="titler">Name</th></tr>
-  <tr ng-repeat="user in vm.userList">
+  <tr><th></th><th class="titler">Username</th><th></th><th class="titler">Name</th><th></th><th class="titler">Email</th><th class="titler">Phone Number</th></tr>
+  <tr ng-repeat="user in vm.userList | orderBy : 'lastName'">
     <td><img ng-src="{{user.profileImageURL}}" alt="{{user.imageURL}}" height="30" width="30"></td>
-    <td class = "titler2">
-    {{user.username}}</td>
+    <td class="titler2">
+    {{user.username}}</td><td></td>
     <td>{{user.firstName}}</td>
     <td>{{user.lastName}}</td>
-
+    <td>{{user.email}}</td>
+    <td>{{user.phoneNumber}}</td>
 
   </tr>
 </table>
 <hr/>
-<h3>Feel like chatting? See who's online and <a href="/chat">start the conversation</a>.</h3>
+<h3 id="more">Feel like chatting?</h3> <h3><a href="/chat">See who's online and start the conversation</a>.</h3>
 </div>
 <!-- {{vm.userList}} -->
 

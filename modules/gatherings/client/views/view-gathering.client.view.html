@@ -28,15 +28,16 @@
     </div>
  
     <div>
-    <p ng-bind="vm.gathering.description"></p>
-    <p ng-bind="vm.gathering.Date"></p>
-    <p>When?</p><p ng-bind="vm.gathering.dateString"></p>
+    <p id="formReport" ng-bind="vm.gathering.description"></p>
+    <p>When?</p>
+    <p id="formReport" ng-bind="vm.gathering.date | date:'fullDate'"></p>
     <p>Where?</p>    
-      <p ng-bind="vm.gathering.location"></p>    
+      <p id="formReport" ng-bind="vm.gathering.location"></p>    
 
-    </div>
-  Want to learn more? Contact {{vm.gathering.user.displayName}} at {{vm.gathering.contact}}
-
+    </div><p id="more">
+  Want to learn more? </p>
+  <p> Contact {{vm.gathering.user.displayName}}: {{vm.gathering.contact}}
+</p>
   </div>
   <br>
 

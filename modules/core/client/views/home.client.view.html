@@ -10,20 +10,21 @@
     <br>
     <div class="row">
       <p class="lead">
-      "Small church with a big heart"
+      Planting God's Word in our hearts. Growing God's love in each other. Harvesting God's promises in our community.
       </p>
     </div>
-    <div class="row">
-      <p>
-        <a class="btn btn-primary btn-lg" href="/authentication/signin" target="_blank">Sign Up</a>
-      </p>
-    </div>
+
   </div>
   <div>
     <p></p>
-    <h1 class="fancytext">Welcome! <br></h1>
+    <h1 class="fancytext">Welcome<ng-show="authentication.user" ng-hide="!authentication.user">, {{authentication.user.firstName}}</a></ng-show="authentication.user">!</h1><br>
     <div class="fancysubtext">
-    <p>We hope you’ll join our thriving little community for worship, Bible study, or service!</p> 
+    <div class="row">
+      <p>
+        <a class="btn btn-primary btn-lg" href="/authentication/signin" target="_blank" ng-show="!authentication.user">Sign Up</a>
+      </p>
+    </div>
+        <p>We hope you’ll join our thriving little community for worship, Bible study, or service!</p> 
     <p>We look forward to walking with you on your journey of faith.</p> 
     <p>Check out the rest of this site to learn more about who we are, what we do, and what we believe.</p>
     </div>

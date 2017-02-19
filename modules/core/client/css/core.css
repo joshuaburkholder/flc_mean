@@ -18,11 +18,24 @@ body {
   font-family: sans-serif;
 }
 
+
+.lead {
+  color: green;
+  font-style: italic;
+}
 /*.wrapper {
   background-image: url("/modules/core/client/img/firstview.jpg");
   min-height: 500px;
 }
 */
+
+#formReport {
+  font-weight: bold;
+}
+
+#more {
+  font-style: italic;
+}
 
 ul,
 li {
@@ -40,6 +53,13 @@ li {
   color:  green;
   font-size: 16px;
   padding-bottom: 5px;
+  padding-right: 8px;
+  align-items: center;
+}
+
+#searchObjResults {
+  border-collapse: separate;
+  border-spacing: 2em;
 }
 
 .fancytext {
