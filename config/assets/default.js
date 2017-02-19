@@ -4,10 +4,15 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/bootstrap/dist/css/bootstrap.css',
-        'public/lib/bootstrap/dist/css/bootstrap-theme.css'
+        'public/lib/cerulean/theme/bootstrap.css',
+        'public/lib/cerulean/theme/usebootstrap.css',
+        'public/lib/cerulean/theme/bootstrap.min.css'
       ],
       js: [
+        'public/lib/cerulean/bootstrap/bootstrap.min.js',
+        'public/lib/cerulean/bootstrap/html5shiv.js',
+        'public/lib/cerulean/bootstrap/respond.min.js',
+        'public/lib/cerulean/bootstrap/usebootstrap.js',
         'public/lib/angular/angular.js',
         'public/lib/angular-resource/angular-resource.js',
         'public/lib/angular-animate/angular-animate.js',
@@ -17,6 +22,10 @@ module.exports = {
         'public/lib/angular-bootstrap/ui-bootstrap-tpls.js',
         'public/lib/angular-file-upload/angular-file-upload.js',
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js'
+      ],
+      less: [
+      'public/lib/cerulean/theme/usebootstrap.less',
+      'public/lib/cerulean/theme/variables.less'
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },

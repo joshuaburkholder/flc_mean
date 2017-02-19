@@ -18,23 +18,11 @@ body {
   font-family: sans-serif;
 }
 
-.wrapper {
+/*.wrapper {
   background-image: url("/modules/core/client/img/firstview.jpg");
+  min-height: 500px;
 }
-
-.fancytext {
-  font-size: 50px;
-  text-align: center;
-  color: white;
-  text-shadow:  5px 5px #558ABB;
-}
-
-.fancysubtext {
-  font-size: 20px;
-  text-align: center;
-  color: white;
-  text-shadow:  2px 2px #558ABB;
-}
+*/
 
 ul,
 li {
@@ -54,8 +42,12 @@ li {
   padding-bottom: 5px;
 }
 
-.well {
-  background-image: url("/modules/core/client/img/secondview.jpg");
+.fancytext {
+  text-align: center;
+}
+
+.fancysubtext {
+  text-align: center;
 }
 
 /****************Styling for Articles - Create ************************************/
@@ -342,7 +334,7 @@ h4 {
 }
 
 /*<!-- Main CSS -->*/
-.content {
+/*.content {
   margin-top: 50px;
 }
 .undecorated-link:hover {
@@ -354,7 +346,7 @@ h4 {
 .ng-cloak,
 .x-ng-cloak {
   display: none !important;
-}
+}*/
 .header-profile-image {
   opacity: 0.8;
   height: 28px;
@@ -366,11 +358,11 @@ h4 {
 a:hover .header-profile-image {
   opacity: 1;
 }
-.user-header-dropdown-toggle {
+/*.user-header-dropdown-toggle {
   padding-top: 11px !important;
   padding-bottom: 11px !important;
-}
-.error-text {
+}*/
+/*.error-text {
   display: none;
 }
 .has-error .help-block.error-text {
@@ -387,3 +379,4 @@ a:hover .header-profile-image {
 .btn {
   background-color: #90ADCD;
 }
+*/

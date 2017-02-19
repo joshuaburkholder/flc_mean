@@ -15,13 +15,14 @@
 
 
   <table id="searchObjResults">
-  <tr><th class="titler">Name</th><th></th><th class="titler">Username</th></tr>
+  <tr><th class="titler">Username</th><th></th><th class="titler">Name</th></tr>
   <tr ng-repeat="user in vm.userList">
     <td><img ng-src="{{user.profileImageURL}}" alt="{{user.imageURL}}" height="30" width="30"></td>
-    <td>{{user.firstName}}</td>
-    <td>{{user.lastName}}</td>
     <td class = "titler2">
     {{user.username}}</td>
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+
 
   </tr>
 </table>
