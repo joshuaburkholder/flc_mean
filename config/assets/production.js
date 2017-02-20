@@ -4,8 +4,8 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/bootstrap/dist/css/bootstrap.min.css',
-        'public/lib/bootstrap/dist/css/bootstrap-theme.min.css',
+        'modules/core/client/css/cerulean/theme/bootstrap.min.css',
+        'public/lib/bootstrap/dist/css/bootstrap-theme.min.css'
       ],
       js: [
         'public/lib/angular/angular.min.js',
