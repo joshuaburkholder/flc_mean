@@ -9,6 +9,8 @@ module.exports = {
         'modules/core/client/css/cerulean/theme/bootstrap.min.css',
         'public/lib/bootstrap/dist/css/bootstrap.css',
         'modules/core/client/css/cerulean/theme/bootstrap.min.css',
+        'modules/core/client/css/core.css',
+        'modules/core/client/css/gathering.css',
         'public/lib/bootstrap/dist/css/bootstrap-theme.min.css'
       ],
       js: [

@@ -29,9 +29,6 @@ var GatheringSchema = new Schema({
   contact: {
     type: String
   },
-  dateString: {
-    type: String
-  },  
   location: {
     type: String
   },        
