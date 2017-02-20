@@ -28,7 +28,8 @@ module.exports = {
       ],
       less: [
         'modules/core/client/css/cerulean/theme/usebootstrap.less',
-        'modules/core/client/css/cerulean/theme/variables.less'
+        'modules/core/client/css/cerulean/theme/variables.less',
+        'congig/assets/lib/glyphicons.less'
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },

@@ -14,7 +14,7 @@
       </div>
 
       <div class="page-header">
-    <h1 class="card.title" ng-bind="vm.gathering.name"></h1>
+    <h2 class="card.title" ng-bind="vm.gathering.name"></h2>
     <small>
     <em class="text-muted">
       Posted on
@@ -28,18 +28,18 @@
     </div>
  
     <div>
-    <p id="formReport" ng-bind="vm.gathering.description"></p>
-    <p>When?</p>
-    <p id="formReport" ng-bind="vm.gathering.date | date:'fullDate'"></p>
-    <p>Where?</p>    
+      <p id="formReport" ng-bind="vm.gathering.description"></p>
+      <p>When?</p>
+      <p id="formReport" ng-bind="vm.gathering.date | date:'fullDate'"></p>
+      <p>Where?</p>    
       <p id="formReport" ng-bind="vm.gathering.location"></p>    
+    </div>
+    <div>
+    <p id="more">Want to learn more? </p>
+    <p> Contact {{vm.gathering.user.displayName}}: {{vm.gathering.contact}}</p>
+    </div>
 
-    </div><p id="more">
-  Want to learn more? </p>
-  <p> Contact {{vm.gathering.user.displayName}}: {{vm.gathering.contact}}
-</p>
-  </div>
   <br>
-
+  </div>
   <p class="lead" ng-bind="vm.gathering.content"></p>
 </section>
