@@ -4,16 +4,16 @@ module.exports = {
   client: {
     lib: {
       css: [
-        'public/lib/cerulean/theme/bootstrap.css',
-        'public/lib/cerulean/theme/usebootstrap.css',
-        'public/lib/cerulean/theme/bootstrap.min.css',
+        'modules/core/client/css/cerulean/theme/bootstrap.css',
+        'modules/core/client/css/cerulean/theme/usebootstrap.css',
+        'modules/core/client/css/cerulean/theme/bootstrap.min.css',
         'public/lib/bootstrap/dist/css/bootstrap.css'
       ],
       js: [
-        'public/lib/cerulean/bootstrap/bootstrap.min.js',
-        'public/lib/cerulean/bootstrap/html5shiv.js',
-        'public/lib/cerulean/bootstrap/respond.min.js',
-        'public/lib/cerulean/bootstrap/usebootstrap.js',
+        'modules/core/client/css/cerulean/bootstrap/bootstrap.min.js',
+        'modules/core/client/css/cerulean/bootstrap/html5shiv.js',
+        'modules/core/client/css/cerulean/bootstrap/respond.min.js',
+        'modules/core/client/css/cerulean/bootstrap/usebootstrap.js',
         'public/lib/angular/angular.js',
         'public/lib/angular-resource/angular-resource.js',
         'public/lib/angular-animate/angular-animate.js',
@@ -25,8 +25,8 @@ module.exports = {
         'public/lib/owasp-password-strength-test/owasp-password-strength-test.js'
       ],
       less: [
-        'public/lib/cerulean/theme/usebootstrap.less',
-        'public/lib/cerulean/theme/variables.less'
+        'modules/core/client/css/cerulean/theme/usebootstrap.less',
+        'modules/core/client/css/cerulean/theme/variables.less'
       ],
       tests: ['public/lib/angular-mocks/angular-mocks.js']
     },
