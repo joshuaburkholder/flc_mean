@@ -409,3 +409,50 @@ a:hover .header-profile-image {
   padding: 10px 10px 10px 10px;
   border-radius: 20px;
 }
+
+/********** ARTICLE LIST VIEW ***************/
+
+.page-header{
+  background-color: lightgreen;
+  text-align: center;
+}
+
+.middlewrap {
+  background-color: black;
+}
+
+.list-group {
+  background-color: yellow;
+  padding-right: 20px;
+}
+
+.list-group-item{
+  background-color: white;
+  min-width: 300px;
+  max-width: 350px;
+  height: 400px;
+  float: left;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  border: 2px solid #317eac !important;
+   -moz-border-radius: 5px;
+  border-radius: 5px;
+/*  -moz-box-shadow: 3px 3px 5px 6px #303030;
+  -webkit-box-shadow: 3px 3px 5px 6px ##303030;*/
+  box-shadow: 1px 1px 10px 0px rgb(25,25,250);
+}
+
+.list-group-item-heading {
+  color: green;
+  background-color: blue;
+}
+
+.list-group-item-text {
+  color: black;
+}
+
+.alert alert-warning text-center{
+  background-color: darkgreen;
+}

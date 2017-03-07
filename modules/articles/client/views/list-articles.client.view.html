@@ -2,23 +2,32 @@
   <div class="page-header">
     <h1>Announcements</h1>
   </div>
+
+<div class="middlewrap">
+
   <div class="list-group">
     <a ng-repeat="article in articles" ui-sref="articles.view({articleId: article._id})" class="list-group-item">
       <small class="list-group-item-text">
-        <span ng-bind="article.typea | uppercase"></span>
+        <span ng-bind="article.typea | uppercase"></span><p>
         posted by
         <span ng-bind="article.user.displayName"></span>
         on
-        <span ng-bind="article.created | date:'mediumDate'"></span>
+        <span ng-bind="article.created | date:'mediumDate'"></p></span>
         
 
       </small>
 
-      <h4 class="list-group-item-heading" ng-bind="article.title"></h4>
+      <h2 class="list-group-item-heading" ng-bind="article.title"></h2>
       <p class="list-group-item-text" ng-bind="article.content"></p>
     </a>
-  </div>
+     </div>
+
   <div class="alert alert-warning text-center" ng-if="articles.$resolved && !articles.length">
     No announcements posted. Why don't you <a ui-sref="articles.create">create one</a>?
   </div>
+
+</div>
+    
+
 </section>
+
