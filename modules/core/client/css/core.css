@@ -33,6 +33,10 @@ body {
   font-weight: bold;
 }
 
+#leadimage {
+  margin-top: 15px;
+}
+
 #more {
   font-style: italic;
 }
