@@ -16,21 +16,68 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: sans-serif;
+  background-color: #ACF3F3;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../img/building.jpeg");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url("../img/firstview.jpg");
+    width: 100%;
+    /* Set a specific height */
+    min-height: 800px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide {
+  margin-bottom: 5px;
 }
 
 .navbar-header {
   background-color: #4863A0;
 }
 
+.row {
+  width: 80%;
+  margin-left: 30px;
+  margin-right: auto;
+}
+
 .lead {
   color: green;
   font-style: italic;
+  font-style: 20px;
+
 }
+
 /*.wrapper {
   background-image: url("/modules/core/client/img/firstview.jpg");
   min-height: 500px;
 }
 */
+
+.logo_F {
+  margin-left: 50%;
+  margin-top: 3vh;
+  position: fixed;
+  z-index: 1;
+}
 
 #formReport {
   font-weight: bold;
