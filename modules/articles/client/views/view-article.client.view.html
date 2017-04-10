@@ -1,4 +1,7 @@
 <section ng-controller="ArticlesController" ng-init="findOne()">
+
+<div class="insideWrapper">
+
   <div class="cardx">
   
     <div class="pull-right" ng-show="authentication.user._id == article.user._id">
@@ -11,9 +14,10 @@
     </div>
 
     <div>
+
       <h2 ng-bind="article.title"></h2>
       <h4 ng-bind="article.typea"></h4>
-    </div>
+    
 
   <small>
     <em class="text-muted">
@@ -25,4 +29,7 @@
   </small>
   <p class="lead" ng-bind="article.content"></p>
   </div>
+  </div>
+
+</div>
 </section>

@@ -19,10 +19,24 @@ body {
   background-color: #ACF3F3;
 }
 
+section .container {
+  width: 100vw !important;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.content {
+  width: 110vw !important;
+  margin-left: -30px;
+  margin-right: 0;
+  padding: 0;
+}
+
 .parallax {
     /* The image used */
     background-image: url("../img/building.jpeg");
-    width: 100%;
+    width: 110vw;
     /* Set a specific height */
     min-height: 800px; 
 
@@ -30,6 +44,7 @@ body {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .parallax2 {
@@ -73,7 +88,7 @@ body {
 */
 
 .logo_F {
-  margin-left: 50%;
+  margin-left: 60vw;
   margin-top: 3vh;
   position: fixed;
   z-index: 1;
@@ -85,6 +100,12 @@ body {
 
 #more {
   font-style: italic;
+}
+
+.insideWrapper {
+  margin-left: 1050px !important;
+  margin-right: auto;
+  padding: 100px 100px 100px 100px;
 }
 
 ul,
