@@ -33,7 +33,13 @@ body {
 .homeRow {
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
-  min-height: 350px;
+  min-height: 300px;
+}
+
+.footerRow{
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+/*  height: 600px;*/
 }
 
 div .class{
@@ -98,6 +104,7 @@ section .container {
   background-image: url("../img/sanctuary.jpg");
   min-height: 250px;
   width: 500px;
+  background-repeat: no-repeat;
 }
 
 .parallax2 {
