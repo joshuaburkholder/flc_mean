@@ -2,19 +2,62 @@
 
 <div class="wrapper">
 
-  <div class="row">
+  <div class="logoRow">
         <img alt="FIRST" class="logo_F" src="modules/core/client/img/brand/logo.png" />
   </div>
 
-<div class="parallax"> </div>     
+<!-- ********************** first section: "home" ****************** -->
+
+<div class="parallax"> 
+
+<div class="slide">  
+  <div class="innerSlide">
+    <p></p>
+    <h1 class="fancytext">Welcome<ng-show="authentication.user" ng-hide="!authentication.user">, {{authentication.user.firstName}}</a></ng-show="authentication.user">!</h1><br>
+    <div class="fancysubtext">
+    <div class="row">
+      <p>
+        <a class="btn btn-primary btn-lg" href="/authentication/signin" target="_blank" ng-show="!authentication.user">Sign Up</a>
+
+      </p>
+      </div>
+
+  </div>
+</div>
+
+</div>     
+
+<!-- ********************** z section: "scroll" ****************** -->
 
 
+<div class="scrollRow"> <a class="arrow-wrap" href="#content">
+        <span class="arrow"></span>
+    </a></div>
 
-<div class="row"></div>
-    <br>
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^ z section: "scroll"  ^^^^^^^^^^^^^^^^^^^^^^6 -->   
+<!--     <br> -->
 
 
   </div>
+
+
+
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-3">
+      <h2><strong>W</strong>orship</h2>
+      <p>our worship service follows a centuries-old pattern (aka “the liturgy”) that is based in Scripture and includes prayers, songs, and call-and-response exchanges with the worship leader</p>
+      <p>We’d love for you experience our liturgy in person and join us in worship! We gather every Sunday at 9:30 a.m. for about an hour or so. 
+      </p>
+    </div>
+   
+    <div class="col-md-3">
+      <img src="../img/sanctuary.jpg" alt="sanctuary">
+<!--       <img src="smiley.gif" alt="Smiley face" width="42" height="42"> -->
+    </div>
+      
+      </p>
+    </div>
 
 
 <!--    <div class="text-center">   -->
@@ -29,16 +72,7 @@
 
   <div>
 
-<div class="slide">  
-    <p></p>
-    <h1 class="fancytext">Welcome<ng-show="authentication.user" ng-hide="!authentication.user">, {{authentication.user.firstName}}</a></ng-show="authentication.user">!</h1><br>
-    <div class="fancysubtext">
-    <div class="row">
-      <p>
-        <a class="btn btn-primary btn-lg" href="/authentication/signin" target="_blank" ng-show="!authentication.user">Sign Up</a>
-      </p>
-  </div>
-</div>
+
 
 <div class="parallax2"> </div>
 
@@ -48,14 +82,7 @@
     </div>
   </div>
 </div>
-  <div class="row">
-    <div class="col-md-3">
-      <h2><strong>W</strong>orship</h2>
-      <p>our worship service follows a centuries-old pattern (aka “the liturgy”) that is based in Scripture and includes prayers, songs, and call-and-response exchanges with the worship leader</p>
-      <p>We’d love for you experience our liturgy in person and join us in worship! We gather every Sunday at 9:30 a.m. for about an hour or so. </p>
 
-      </p>
-    </div>
     <div class="col-md-3">
       <h2><strong>G</strong>atherings</h2>
       <p>In addition to worship, First offers a number of ways to grow in discipleship and build community. Throughout most of the year, a weekly Bible study is offered on Wednesday evenings.</p>
