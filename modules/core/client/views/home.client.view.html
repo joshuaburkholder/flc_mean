@@ -1,81 +1,164 @@
 <section ng-controller="HomeController">
 
-<div class="wrapper"></div>
-  <div class="text-center">
-    <div class="row">
-      <div class="col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-12">
-        <img alt="FIRST" class="img-responsive text-center" id="leadimage" src="modules/core/client/img/brand/logo.png" />
-      </div>
-    </div>
-    <br>
-    <div class="row">
-      <p class="lead">
-      Planting God's Word in our hearts. Growing God's love in each other. Harvesting God's promises in our community.
-      </p>
-    </div>
 
+<div class="wrapper">
+
+  <div class="logoRow">
+        <img alt="FIRST" class="logo_F" src="modules/core/client/img/brand/logo.png" />
   </div>
-  <div>
+
+<!-- ********************** first section: "home" ****************** -->
+
+<div class="parallax"> 
+
+<div class="slide">  
+  <div class="innerSlide">
     <p></p>
     <h1 class="fancytext">Welcome<ng-show="authentication.user" ng-hide="!authentication.user">, {{authentication.user.firstName}}</a></ng-show="authentication.user">!</h1><br>
     <div class="fancysubtext">
     <div class="row">
       <p>
         <a class="btn btn-primary btn-lg" href="/authentication/signin" target="_blank" ng-show="!authentication.user">Sign Up</a>
+
       </p>
+      </div>
+
+  </div>
+</div>
+
+</div>     
+
+<!-- ********************** z section: "scroll" ****************** -->
+
+
+<div class="scrollRow"> <a class="arrow-wrap" href="#content">
+        <span class="arrow"></span>
+    </a></div>
+
+<!-- ^^^^^^^^^^^^^^^^^^^^^^^^ z section: "scroll"  ^^^^^^^^^^^^^^^^^^^^^^6 -->   
+<!--     <br> -->
+
+
+  </div>
+
+
+
+  <div class="homeRow">
+    <div class="col-md-1"></div>
+    <div class="col-md-5">
+      <h2><strong>P</strong>lanting <strong>G</strong>od's <strong>L</strong>ove in our <strong>H</strong>earts</h2>
+      <p>Our worship service follows a centuries-old pattern (aka “the liturgy”) that is based in Scripture and includes prayers, songs, and call-and-response exchanges with the worship leader</p>
+      <p>We’d love for you experience our liturgy in person and join us in worship! We gather every Sunday at 9:30 a.m. for about an hour or so. 
+      </p>
+      <span><h3><strong>Worship: Sunday 9:30 a.m.</strong></h3></span>
     </div>
-        <p>We hope you’ll join our thriving little community for worship, Bible study, or service!</p> 
+       <div class="col-md-2"></div>
+
+    <div class="col-md-3 sanctuaryImg"></div>
+    <div class="col-md-1"></div>
+ </div>
+<!--    <div class="text-center">   -->
+<!--     <div class="row">
+      <p class="lead">Planting God's Word in our hearts.</p>
+       <p class="lead">Growing God's love in each other.</p> 
+         <p class="lead">Harvesting God's promises in our community.</p>
+    </div>
+  </div>   -->
+<!-- </div> -->
+
+<div class="parallax2"> </div>
+
+
+  <div class="homeRow">
+    <div class="col-md-1"></div>
+    <div class="col-md-3 sschoolImg"></div>
+    <div class="col-md-5">
+      <h2><strong>G</strong>rowing <strong>G</strong>od's love in <strong>e</strong>ach <strong>o</strong>ther</h2>
+    <p>We hope you’ll join our thriving little community for worship, Bible study, or service!</p> 
     <p>We look forward to walking with you on your journey of faith.</p> 
     <p>Check out the rest of this site to learn more about who we are, what we do, and what we believe.</p>
+      <span><h3><strong>Bible Study: Wednesday @ 6 p.m.</strong></h3></span>
+    </div>
+        <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
+
+ </div>
+
+<!-- ************************** slide 3 *************** -->
+
+<div class="parallax3"> </div>
+
+
+  <div class="homeRow">
+    <div class="col-md-2"></div>
+    <div class="col-lg-8">
+<!--       <p class="lead">Harvesting God's promises in our community.</p> -->
+      <h2><strong>H</strong>arvesting <strong>G</strong>od's promises in <strong>O</strong>ur <strong>C</strong>ommunity</h2>
+
+    <p>Churchly ipsum dolor amet revelation bless his heart christian, ambient radiate small group reverb special music unpack that worship leader love on cell group in the world very father, I just father. Seminarian reverb bless his heart resurgent seeker friendly ambient purpose-driven.</p> 
+    <p>Intentional emergent leather bound books elevate, totally lock in very pour out.</p>
+      <!-- <span><h2><strong>Bible Study: Wednesday @ 6 p.m.</strong></h2></span> -->
+    </div>
+        <div class="col-md-2"></div>
+
+ </div>
+
+        
     </div>
   </div>
 </div>
-  <div class="row">
-    <div class="col-md-3">
+
+<div class="parallax4"></div>
+
+
+<div class="footerRow">
+
+           <div class="col-md-1"></div>
+
+   <div class="col-md-2">
+      <h2><strong>C</strong>ontact</h2>
+     
+
+      <p>204 E Pike St</p>
+      <p>Attica, IN 47918</p>
+      <p></p>
+      <p>(765) 764-4364</p>
+    </div>
+
+     <div class="col-md-4">
       <h2><strong>W</strong>orship</h2>
-      <p>our worship service follows a centuries-old pattern (aka “the liturgy”) that is based in Scripture and includes prayers, songs, and call-and-response exchanges with the worship leader</p>
-      <p>We’d love for you experience our liturgy in person and join us in worship! We gather every Sunday at 9:30 a.m. for about an hour or so. </p>
+      <p>We’d love for you experience our liturgy in person and join us in worship! We gather every Sunday at 9:30 a.m. for about an hour or so. We have a children’s Sunday School that meets during the school year following worship. Come and see!
+      </p>
+      <h4>Sunday 9:30 a.m.</h4>
+    </div>        
 
-      </p>
-    </div>
-    <div class="col-md-3">
-      <h2><strong>G</strong>atherings</h2>
-      <p>In addition to worship, First offers a number of ways to grow in discipleship and build community. Throughout most of the year, a weekly Bible study is offered on Wednesday evenings.</p>
-      <p>For information on the current bible study series, or to learn about other events happening, click the Gathering tab on the top of the page.</p>
+  
 
-      </p>
-    </div>
-    <div class="col-md-3">
-      <h2><strong>A</strong>nnouncements</h2>
-      <p>Prayers are offered weekly in worship, and members are encouraged to incorporate them into their personal devotions. Service in the community is encouraged, and a wide variety of opportunities are offered throughout the year.
-      </p>
-      <p>You can learn more about special opportunities, worship services, and other updates by clicking the Announcements tab at the top of the page.</p>
-    </div>
-    <div class="col-md-3">
+      <div class="col-md-3">
       <h2><strong>L</strong>ocation</h2>
       <p>204 E Pike St. Attica, Indiana</p>
             <a target="_blank" href="https://www.google.com/maps/place/204+E+Pike+St,+Attica,+IN+47918/@40.289108,-87.2513367,17z/data=!3m1!4b1!4m5!3m4!1s0x8812956efe14f1fd:0x6131b884f582cf4b!8m2!3d40.289108!4d-87.249148">      <img class="map" ng-src="/modules/core/client/img/atticamap.png" /></a>
-                </div>
+      </div>
+
+<div class="col-md-2"></div>
+
+
+      <p></p>
+      <p></p>
+    </div>
+
+
+
+
+  
+
+</div>
+
+<!-- <div class="parallax"> -->
+  <div class="closingWrapper">
+<div class="closing"></div>
   </div>
-  <div class="well">
-<!--     <h2>MEAN.JS Documentation</h2>
-    <p>
-      Once you're familiar with the foundation technology, check out the MEAN.JS Documentation:
-      <ul>
-        <li><a target="_blank" href="http://meanjs.org/docs.html">MEAN.JS Documentation</a>
-        </li>
-        <li><a target="_blank" href="http://meanjs.org/generator.html">Yeoman Generator</a>
-				</li> 
-        <li><a target="_blank" href="http://meanjs.org/modules.html">Modules</a>
-        </li>
-        <li><a target="_blank" href="http://meanjs.org/changelog.html">Changelog</a>
-        </li>
-        <li><a target="_blank" href="http://meanjs.org/community.html">Community</a>
-        </li>
-        <li><a target="_blank" href="http://blog.meanjs.org">Blog</a>
-        </li>
-      </ul> -->
-    </p>
-  </div>
+</div>
+
 
 </section>

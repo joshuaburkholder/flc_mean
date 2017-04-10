@@ -42,7 +42,8 @@
       {% block content %}{% endblock %}
     </section>
   </section>
-
+ <header ng-include="'/modules/core/client/views/header.client.view.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+ 
   <!--Embedding The User Object-->
   <script type="text/javascript">
     var user = {{ user | json | safe }};
