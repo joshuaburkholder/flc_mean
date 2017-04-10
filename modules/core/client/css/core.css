@@ -36,6 +36,10 @@ body {
   min-height: 350px;
 }
 
+div .class{
+  padding-left: 50x;
+}
+
 /*************************** section ******************************/
 section .container {
   width: 100vw !important;
