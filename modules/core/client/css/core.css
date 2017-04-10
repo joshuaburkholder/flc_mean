@@ -30,6 +30,12 @@ body {
   height: 0px;
 }
 
+.homeRow {
+  margin: 5px 5px 5px 5px;
+  padding: 5px 5px 5px 5px;
+  min-height: 350px;
+}
+
 /*************************** section ******************************/
 section .container {
   width: 100vw !important;
@@ -84,20 +90,30 @@ section .container {
   color: black;
 }
 
+.sanctuaryImg {
+  background-image: url("../img/sanctuary.jpg");
+  min-height: 250px;
+  width: 500px;
+}
 
 .parallax2 {
     /* The image used */
     background-image: url("../img/worship.jpg");
-    width: 100%;
-    height: auto;
+    height: 470px;
+    width: 110vw;
     /* Set a specific height */
-    min-height: 400px; 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    object-fit: contain;
+    background-size: 100%;
 }
+
+.headline {
+  margin: 3px 3px 3px 3px;
+  padding: 3px 3px 3px 3px;
+}
+
 
 .parallax3 {
     /* The image used */
