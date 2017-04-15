@@ -40,7 +40,7 @@ body {
 .footerRow{
   margin: 5px 5px 5px 5px;
   padding: 5px 5px 5px 5px;
-/*  height: 600px;*/
+  height: 800px;
 }
 
 div .class{
@@ -109,7 +109,6 @@ section .container {
 }
 
 .parallax2 {
-    /* The image used */
     background-image: url("../img/worship.jpg");
     height: 470px;
     width: 110vw;
@@ -181,11 +180,16 @@ section .container {
 }
 */
 
+.logoRow{
+  background: rgba(11, 50, 101, .1);
+  width: 110vw;
+}
+
 .logo_F {
   margin-left: 60vw;
   margin-top: 3vh;
-  position: fixed;
-  z-index: 1;
+/*  position: fixed;
+  z-index: 1;*/
 }
 
 #formReport {
