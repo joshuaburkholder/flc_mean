@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## First LC
 ### Church web app prototype for First Lutheran Church
 [FirstLC](https://young-caverns-77613.herokuapp.com/) is a full-stack JavaScript prototype built upon the MEANJS Boilerplate.
