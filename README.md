@@ -48,4 +48,3 @@ About the Stack (from the MEANJS documentation):
 ---
 ### Preview the site:
 You can preview the current live version of the web app [here](https://young-caverns-77613.herokuapp.com/).
->>>>>>> 30540e9881c206a4b816ca40af4eed749a446a86
